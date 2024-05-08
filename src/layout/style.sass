@@ -1,0 +1,33 @@
+.fetek-layout
+  .layout-banner
+    background-image: url('@/assets/images/banner.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 100% 50%
+
+  .layout-header
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.093) 100%) !important
+
+  .ant-menu-dark
+    background: transparent
+    .ant-menu-item-selected, .ant-menu-submenu-selected, .ant-menu-item:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected):hover
+      @apply bg-transparent text-green-shamrock #{!important}
+      .ant-menu-title-content::after
+        content: ""
+        @apply block w-10 my-0 mx-auto border-x-0 border-t-0 border-b border-solid border-primary-700
+    .ant-menu-submenu-selected
+      span
+        @apply bg-transparent text-green-shamrock #{!important}
+    .ant-menu-submenu-horizontal:hover
+      .ant-menu-title-content
+        span
+          @apply bg-transparent text-green-shamrock #{!important}
+      .ant-menu-title-content::after
+        content: ""
+        @apply block w-10 my-0 mx-auto border-x-0 border-t-0 border-b border-solid border-primary-700
+
+.ant-menu-submenu-popup
+  .ant-menu
+    @apply bg-transparent
+    .ant-menu-item-selected, .ant-menu-item-only-child:hover
+      @apply bg-transparent text-green-shamrock #{!important}

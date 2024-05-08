@@ -1,0 +1,22 @@
+.form-send-us-message
+  .ant-form-item-label
+    label
+      @apply font-light text-base leading-6 text-gray-50
+  .ant-form-item-required:not(.ant-form-item-required-mark-optional)
+    &::before
+      content: '' !important
+    &::after
+      content: '*' !important
+      @apply inline-block ml-1 font-medium text-base leading-5 text-primary-700 visible #{!important}
+
+  .ant-form-item-control-input
+    .ant-form-item-control-input-content
+      input
+        height: 37px
+      input, textarea
+        @apply rounded-none opacity-30 text-black text-base
+
+      button
+        @apply h-14 w-full text-base uppercase text-gray-50 bg-primary-700 flex justify-center items-center rounded-none
+        &:hover
+          @apply bg-primary-800

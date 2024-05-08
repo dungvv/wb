@@ -1,0 +1,61 @@
+.about-technology
+  .active-tab::after
+    content: ""
+    @apply absolute w-full top-[3.625rem] border-x-0 border-t-0 border-solid border-b-4 border-primary-700
+
+  .service-grid
+    .service-item:hover
+      background: linear-gradient(180deg, rgba(52, 203, 158, 0) 7.84%, rgba(52, 203, 158, 0.24) 94.51%)
+    .service-item
+      @apply border-[0.5px] border-solid border-primary-800
+
+      /* Add borders to the left of each column */
+      &:not(:first-child)
+        border-left: none
+
+      /* Add borders top of each row */
+      &:not(:nth-child(-n+5))
+        border-top: none
+
+      // /* Remove border for the last row */
+      // &:nth-last-child(-n+5)
+      //   border-bottom: none
+
+      /* Remove border for the first column */
+      &:nth-child(5n + 1)
+        border-left: none
+
+      /* Remove top border of the first row */
+      &:nth-child(-n+5)
+        border-top: none
+
+      /* Remove border for the end column */
+      &:nth-child(5n)
+        border-right: none
+
+    .addition-service-item:hover
+      background: linear-gradient(180deg, rgba(52, 203, 158, 0) 7.84%, rgba(52, 203, 158, 0.24) 94.51%)
+    .addition-service-item
+      @apply border-[0.5px] border-solid border-primary-800
+      &:not(:first-child)
+        border-left: none
+
+      /* Add borders top of each row */
+      &:not(:nth-child(-n+5))
+        border-top: none
+
+      // /* Remove border for the last row */
+      &:nth-last-child(-n+5)
+        border-bottom: none
+
+      /* Remove border for the first column */
+      &:nth-child(5n + 1)
+        border-left: none
+
+      /* Remove top border of the first row */
+      &:nth-child(-n+5)
+        border-top: none
+
+      /* Remove border for the end column */
+      &:nth-child(5n)
+        border-right: none

@@ -1,0 +1,25 @@
+.solution-card
+  @apply bg-[#0000004D] h-full p-4
+  .number
+    @apply text-white text-base mb-2
+  .icon
+    svg
+      path
+        @apply fill-white w-24 h-24 stroke-white
+  .title
+    @apply text-base text-gray-50 whitespace-break-spaces my-2
+  .description
+    @apply text-base font-light text-gray-200
+
+  &:hover
+    @apply bg-primary-50 #{!important}
+    .number
+      @apply text-primary-700 #{!important}
+    .icon
+      svg
+        path
+          @apply fill-primary-700 stroke-primary-700 #{!important}
+    .title
+      @apply text-gray-700
+    .description
+      @apply text-gray-600
